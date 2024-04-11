@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bank Card Portal</title>
+  </head>
+  <body>
+    <main>
+      <header class="flex">
+        <div class="card flex">
+          <div class="cardName"><h1></h1></div>
+          <div class="cardNumber"><h2 class="cardNumberText"></h2></div>
+          <div class="bottonSection flex">
+            <div class="ccv2 flex">
+              <pre>ccv2:  </pre>
+              <h3 class="ccv2Text"></h3>
+            </div>
+            <div class="expirationDate flex">
+              <pre>expiration:  </pre>
+              <h3 class="expirationMonthText"></h3>
+              /
+              <h3 class="expirationYearText"></h3>
+            </div>
+          </div>
+        </div>
+        <form action="" class="form flex">
+          <div class="cardNumberParrent flex">
+            <label for="cardNumber">Card Number</label>
+            <input type="number" placeholder="card Number" id="cardNumber" />
+          </div>
+          <div class="ccv2Parrent flex">
+            <label for="ccv2">ccv2</label>
+            <input type="number" placeholder="ccv2" id="ccv2" />
+          </div>
+          <label for="expirationMonth">Expiration Date</label>
+          <br />
+          <div class="expirationDate flex">
+            <input type="number" placeholder="Year" id="expirationMonth" />
+            <input type="number" placeholder="Month" id="expirationYear" />
+          </div>
+          <input class="submit" type="submit" />
+          <h2 class="succes"></h2>
+        </form>
+      </header>
+    </main>
+    <script src="js/app.js"></script>
+  </body>
+</html>
